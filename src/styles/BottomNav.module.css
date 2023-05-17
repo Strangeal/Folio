@@ -1,0 +1,15 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+  margin-top: 2rem;
+}
+
+.nav_link {
+  margin: 0 1rem;
+}
+
+.right p {
+  opacity: 0.6;
+}

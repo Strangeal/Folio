@@ -5,7 +5,10 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home.tsx";
 import Layout from "./component/Layout.tsx";
-import Experience from "./pages/Experience.tsx";
+import Projects from "./pages/Projects.tsx";
+import { ThemeContextProvider } from "./component/theme/ThemeContextProvider.tsx";
+import About from "./pages/About.tsx";
+import Dictionary from "./pages/Dictionary.tsx";
 
 const router = createBrowserRouter([
   {
@@ -20,8 +23,16 @@ const router = createBrowserRouter([
             element: <Home />,
           },
           {
-            path: "experience",
-            element: <Experience />,
+            path: "about",
+            element: <About />,
+          },
+          {
+            path: "projects",
+            element: <Projects />,
+          },
+          {
+            path: "dictionary",
+            element: <Dictionary />,
           },
         ],
       },
@@ -30,6 +41,8 @@ const router = createBrowserRouter([
 ]);
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ThemeContextProvider>
+      <RouterProvider router={router} />
+    </ThemeContextProvider>
   </React.StrictMode>
 );

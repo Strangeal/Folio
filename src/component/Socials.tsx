@@ -1,14 +1,12 @@
 import React from "react";
-import { BsGithub, BsTwitter, BsPersonCheck } from "react-icons/bs";
+import { BsGithub, BsTwitter } from "react-icons/bs";
 import { TfiLinkedin } from "react-icons/tfi";
 import { FiVoicemail } from "react-icons/fi";
 import { Divider } from "@mui/material";
 import styles from "../styles/Socials.module.css";
 import { Link } from "react-router-dom";
 
-type Props = {};
-
-const Socials = (props: Props) => {
+const Socials = () => {
   const socialItems = [
     {
       icon: BsGithub,

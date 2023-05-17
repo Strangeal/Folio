@@ -1,10 +1,16 @@
 import { Outlet } from "react-router-dom";
-import "./App.css";
+import { ThemeProvider } from "@mui/material/styles";
+import { CssBaseline } from "@mui/material";
+import { useThemeContext } from "./component/theme/ThemeContextProvider";
 
 function App() {
+  const { theme } = useThemeContext();
   return (
     <>
-      <Outlet />
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Outlet />
+      </ThemeProvider>
     </>
   );
 }

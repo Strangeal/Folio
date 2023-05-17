@@ -1,0 +1,23 @@
+.nav {
+  padding: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #000;
+  margin: 1rem auto 4rem auto;
+  font-size: 0.8rem;
+}
+
+.nav_items {
+  border: 1px solid #8986866d;
+  padding: 0.5rem 1rem;
+  border-radius: 40px;
+  box-shadow: 0 0.5px 6.5px 1px rgba(236, 236, 236, 0.85);
+}
+.nav_link {
+  margin: 0 0.7rem;
+}
+
+.theme_icon {
+  color: #fff;
+}

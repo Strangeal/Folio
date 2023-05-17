@@ -1,26 +1,28 @@
-import React from "react";
 import Navbar from "./Navbar";
 import { Outlet } from "react-router-dom";
-import Sidebar from "./Sidebar";
 import { Grid } from "@mui/material";
+import BottomNav from "./BottomNav";
 
-type Props = {};
-
-const Layout = (props: Props) => {
+const Layout = () => {
   return (
     <>
       <Navbar />
 
       <main>
         <Grid container component="section">
-          <Grid item xs={12} sm={6} md={5} lg={4}>
-            <Sidebar />
-          </Grid>
-          <Grid item xs={12} sm={6} md={7} lg={8}>
+          <Grid
+            item
+            xs={12}
+            sm={8}
+            md={10}
+            lg={10}
+            sx={{ mx: { xs: "2rem", sm: "auto" } }}
+          >
             <Outlet />
           </Grid>
         </Grid>
       </main>
+      <BottomNav />
     </>
   );
 };

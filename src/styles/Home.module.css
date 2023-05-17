@@ -1,0 +1,48 @@
+.greet {
+  width: 70%;
+}
+
+.greet h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.work_header h5 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.repo_date {
+  opacity: 0.5;
+  border-left: 2px solid;
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.repo_desc {
+  margin: 0.5rem 0;
+  font-size: 0.92rem;
+  opacity: 0.5;
+}
+
+.repo_visits {
+  font-size: 0.9rem;
+}
+
+.repo_title {
+  font-size: 1.1rem;
+}
+
+.work_status:hover {
+  background-color: #9d9d9d5e;
+  border-radius: 8px;
+}
+.work_status {
+  padding: 1rem;
+}
+
+.front {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}

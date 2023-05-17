@@ -1,0 +1,51 @@
+.dic_section {
+  margin-top: 8rem;
+  margin: auto;
+}
+
+.reason {
+  margin: 5rem auto 0 auto;
+}
+.dic_section form {
+  width: 100%;
+ text-align: center;
+}
+
+.input {
+  width: 100%;
+  padding: 0.7rem;
+  outline: none;
+  border-radius: 18px;
+  border: 1px solid;
+  box-shadow: 0 0.5px 6.5px 1px rgba(236, 236, 236, 0.85);
+  margin-bottom: 1rem;
+ 
+}
+
+.list {
+  font-size: 0.95rem;
+  border: 1px solid;
+  padding: 0.5rem 1rem;
+  opacity: 0.6;
+}
+
+.text2 {
+  margin: 1rem 0;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.author_text {
+  margin-left: 1rem;
+}
+
+.author_text h4 {
+  font-size: 1.3rem;
+}
+.author_text p {
+  opacity: 0.6;
+}
